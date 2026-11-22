@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fale com a GRL Sucatas por telefone, WhatsApp, e-mail ou formulário.">
+  <title>Contato | GRL Sucatas</title>
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="nav">
+    <a class="logo" href="index.html">
+      <img src="img/logo.svg" alt="" width="42" height="42">
+      <div>GRL <span>SUCATAS</span></div>
+    </a>
+    <nav class="menu" aria-label="Menu principal">
+      <a href="index.html">Início</a>
+      <a href="materiais.html">Materiais</a>
+      <a href="infraestrutura.html">Infraestrutura</a>
+      <a href="compra.html">Compra de Sucata</a>
+      <a href="localizacao.html">Localização</a>
+      <a href="contato.html" class="ativa" aria-current="page">Contato</a>
+    </nav>
+  </header>
+  <div class="faixa" aria-hidden="true"></div>
+
+  <section class="hero" id="contato-hero" aria-labelledby="contato-hero-titulo">
+    <div class="hero-texto">
+      <h1 id="contato-hero-titulo">Fale com a GRL</h1>
+      <p>Peça um orçamento, tire dúvidas sobre materiais ou combine uma visita ao pátio.</p>
+    </div>
+  </section>
+
+  <div class="layout">
+
+    <aside class="sidebar" aria-label="Menu lateral">
+      <h2>Nesta página</h2>
+      <a href="#canais">Canais de atendimento</a>
+      <a href="#formulario">Formulário</a>
+
+      <div class="aside-box">
+        <h3>Horário de atendimento</h3>
+        <p>Segunda a sexta: 08h às 17h<br>Sábado: 08h às 12h</p>
+      </div>
+    </aside>
+
+    <main class="content" id="conteudo">
+
+      <section id="canais" aria-labelledby="t-canais">
+        <h2 id="t-canais">Canais de atendimento</h2>
+        <div class="info-grid">
+          <div class="info-box">
+            <h3>Telefone</h3>
+            <p><a href="tel:+551142870498">(11) 4287-0498</a></p>
+          </div>
+          <div class="info-box">
+            <h3>WhatsApp</h3>
+            <p><a href="https://wa.me/551142870498?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20GRL%20Sucatas.">Iniciar conversa</a></p>
+          </div>
+          <div class="info-box">
+            <h3>E-mail</h3>
+            <p><a href="mailto:grlsucatas@gmail.com">grlsucatas@gmail.com</a></p>
+          </div>
+          <address class="info-box">
+            <h3>Endereço</h3>
+            <p>Rodovia Cornélio Pires, 2500<br>Campestre – SP</p>
+          </address>
+        </div>
+      </section>
+
+      <section id="formulario" aria-labelledby="t-form">
+        <h2 id="t-form">Envie uma mensagem</h2>
+        <form class="contato-box" action="mailto:grlsucatas@gmail.com" method="post" enctype="text/plain">
+          <p class="nota">Campos com * são obrigatórios.</p>
+
+          <label for="nome">Nome *</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+
+          <label for="telefone">Telefone ou WhatsApp *</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(11) 4287-0498" required>
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com">
+
+          <label for="assunto">Assunto *</label>
+          <select id="assunto" name="assunto" required>
+            <option value="">Selecione um assunto</option>
+            <option value="vender">Vender sucata</option>
+            <option value="orcamento">Pedir orçamento</option>
+            <option value="comprar">Comprar material</option>
+            <option value="visita">Agendar visita ao pátio</option>
+            <option value="outro">Outro assunto</option>
+          </select>
+
+          <label for="material">Tipo de material</label>
+          <select id="material" name="material">
+            <option value="">Não sei / não se aplica</option>
+            <option value="miuda">Sucata miúda</option>
+            <option value="grauda">Sucata graúda</option>
+            <option value="ferro">Ferro em geral</option>
+          </select>
+
+          <label for="mensagem">Mensagem *</label>
+          <textarea id="mensagem" name="mensagem" placeholder="Descreva o material e a quantidade aproximada" required></textarea>
+
+          <button class="btn" type="submit">Enviar mensagem</button>
+        </form>
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h2>GRL Sucatas</h2>
+        <p>Compra e comercialização de sucata miúda, graúda e ferro em geral.</p>
+      </div>
+      <nav class="footer-col" aria-label="Menu do rodapé">
+        <h2>Páginas</h2>
+        <a href="index.html">Início</a>
+        <a href="materiais.html">Materiais</a>
+        <a href="infraestrutura.html">Infraestrutura</a>
+        <a href="compra.html">Compra de Sucata</a>
+        <a href="localizacao.html">Localização</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <div class="footer-col">
+        <h2>Contato</h2>
+        <a href="tel:+551142870498">(11) 4287-0498</a>
+        <a href="mailto:grlsucatas@gmail.com">grlsucatas@gmail.com</a>
+      </div>
+      <address class="footer-col">
+        <h2>Endereço</h2>
+        <p>Rodovia Cornélio Pires, 2500<br>Campestre – SP</p>
+        <p>Segunda a sexta: 07h às 18h</p>
+      </address>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 GRL Sucatas – Projeto acadêmico de Engenharia da Computação</p>
+    </div>
+  </footer>
+
+</body>
+</html>
